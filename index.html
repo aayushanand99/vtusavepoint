@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>vtu-savepoint</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+
+<script> 
+       jQuery("#slideshow").cycle({
+        timeout:3000, //  autoplay
+        fx: 'scrollHorz',
+	pause:1,
+	
+        });   
+   </script>
+	<style type="text/css">
+.container{
+background-color:#6D6D73;
+width:70%;
+height:100%;
+margin-left:15%;
+position:absolute;
+margin-top:10%;
+z-index:1;
+}
+.header{
+	width:100%;
+	height:15%;
+	position: fixed;
+	background-color:#36363A;
+	font-size: 30px;
+	color:#A3A300;
+z-index: 2;
+}
+#slideshow{
+
+width:100%;
+height:400px;
+background-color: blue;
+position-top:absolute;
+}
+.inner{
+	width:100%;
+	height:600px;
+	background-color: #6D6D73;
+	position:relative;
+	margin-top:4px;
+}
+.dept{
+	background-color: #6D6D73;
+	font-size:30px;
+	margin-top: 20px;
+	height: 180px;
+}
+.br1{
+	font-color:#CCA3CC;
+	width:49%;
+	position:relative;
+	height:100%;
+	background-color: #f0f0f0;
+	float:left;
+}
+.br2{
+	text-decoration: none;
+	color:#CCA3CC;
+
+	width:49%;
+	height:100%;
+	position:relative;
+		background-color: #f0f0f0;
+	float:right;
+}
+body{
+	background-color: #494947;
+
+}
+img{
+	height:100%;
+	width:100%;
+}
+
+	</style>
+
+</head>
+<body>
+<div class="header"><span style="margin-left:500px; font-family:arial">VTU SAVEPOINT
+<a href="index.html"><img style="height:50px; width:50px; float:right; margin-right:200px"src="img/home.svg"></a></span>
+</div>
+
+<div class="container">
+    <div id="slideshow">
+    <div style="width:100%; height:100%; ">	<img id="1" src="img/1.jpeg" ></div>
+        <div style="width:100%; height:100%; ">	<img id="1" src="img/2.jpeg" ></div>
+        <div style="width:100%; height:100%; ">	<img id="1" src="img/3.jpeg" ></div>
+        <div style="width:100%; height:100%; ">	<img id="1" src="img/4.jpeg" ></div>    
+	</div>
+
+	<div class="inner">
+		<div class="dept"><span class="br1"><a href="mech.html"><img src="img/mech.jpg"></a></span>
+		<span class="br2"><a href="ise.html"><img src="img/ise.png"></a></span></div>
+		<div class="dept" ><span class="br1"><a href="cse.html"><img src="img/cse.jpg"></a></span>
+		<span class="br2"><a href="civil.html"><img src="img/civil.jpg"></a></span></div>
+		<div class="dept" ><span class="br1"><a href="ece.html"><img src="img/ece.jpg"></a></span>
+		<span class="br2"><a href="eee.html"><img src="img/eee.jpg"></span></a></div>
+	</div>
+	
+</div>
+</body>
+</html>

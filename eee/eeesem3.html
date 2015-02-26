@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EEE sem 3</title>
+
+		<style type="text/css">
+
+#is{
+
+width:100%;
+height:400px;
+background-color: blue;
+position-top:absolute;
+}
+
+.container{
+background-color:#6D6D73;
+width:70%;
+height:100%;
+margin-left:15%;
+position:absolute;
+margin-top:10%;
+z-index:1;
+}
+.header{
+	width:100%;
+	height:15%;
+	position: fixed;
+	background-color:#36363A;
+	font-size: 30px;
+	color:#A3A300;
+z-index: 2;
+}
+.inner{
+	width:100%;
+	height:600px;
+	background-color: #6D6D73;
+	position:relative;
+	margin-top:4px;
+}
+.dept{
+	background-color: #6D6D73;
+	font-size:30px;
+	margin-top: 20px;
+	height: 180px;
+}
+.br1{
+	font-color:#CCA3CC;
+	width:49%;
+	position:relative;
+	height:100%;
+	background-color: #f0f0f0;
+	float:left;
+}
+.br2{
+	text-decoration: none;
+	color:#CCA3CC;
+
+	width:49%;
+	height:100%;
+	position:relative;
+		background-color: #f0f0f0;
+	float:right;
+}
+body{
+	background-color: #494947;
+
+}
+img{
+	height:100%;
+	width:100%;
+}
+
+
+
+.units{
+	z-index: 3;
+	width:100%;
+	height:100%;
+	background-color:#cc99ff;
+	font-size: 30px;
+	position: fixed;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+$('#units1').hide();
+$('#units2').hide();
+$('#units3').hide();
+$('#units4').hide();
+$('#units5').hide();
+$('#units6').hide();
+});
+
+
+$(document).ready(function(){
+  $("#sub1").click(function(){
+    $("#units1").show();
+});});
+$(document).ready(function(){
+$("#sub2").click(function(){
+    $("#units2").show();
+});});
+$(document).ready(function(){
+$("#sub3").click(function(){
+    $("#units3").show();
+});});
+$(document).ready(function(){
+$("#sub4").click(function(){
+    $("#units4").show();
+});});
+$(document).ready(function(){
+$("#sub5").click(function(){
+    $("#units5").show();
+});});
+$(document).ready(function(){
+$("#sub6").click(function(){
+    $("#units6").show();
+});
+});
+
+$(document).ready(function(){
+  $(".back").click(function(){
+    $("#units1").hide();
+$("#units2").hide();
+$("#units3").hide();
+$("#units4").hide();
+$("#units5").hide();
+$("#units6").hide();
+});
+});
+</script>
+</head>
+<body>
+<div class="header"><span style="margin-left:500px; font-family:arial">VTU SAVEPOINT
+<a href="index.html"><img style="height:50px; width:50px; float:right; margin-right:200px"src="img/home.svg"></a></span>
+</div>
+<div id="wrapper">
+<div class="container">
+    <div id="is">
+	</div>
+	<div class="inner">
+		<div class="dept"><span id="sub1" class="br1"><a >sub1</a></span>
+		<span id="sub2"class="br2"><a >sub2</a></span></div>
+		<div class="dept" ><span id="sub3"class="br1"><a >sub3</a></span>
+		<span id="sub4" class="br2"><a >sub4</a></span></div>
+		<div class="dept" ><span id="sub5" class="br1"><a >sub5</a></span>
+		<span id="sub6" class="br2"><a >sub6</a></span></div>
+	</div>
+</div>
+<div id="units1" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+<div id="units2" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+<div id="units3" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+<div id="units4" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+<div id="units5" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+<div id="units6" class="units"><ul><li><a href="">1st unit</a></li>
+<li><a href="">2nd unit</a></li>
+<li><a href="">3rd unit</a></li>
+<li><a href="">4th unit</a></li>
+<li><a href="">5th unit</a></li>
+<li><a href="">6th unit</a></li>
+<li><a href="">7th unit</a></li>
+<li><a href="">8th unit</a></li></ul>
+<button class="back">back</button>
+</div>
+</div>
+</body>
+</html>
